@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-charcoal: #111111;
+  --color-off-white: #F5F5F5;
+  --color-warm-gray: #E5E5E5;
+  --color-teal: #00B8A9;
+
+  --font-inter: var(--font-inter);
+  --font-dm-sans: var(--font-dm-sans);
+}
+
+@layer base {
+  :root {
+    --background: #F5F5F5;
+    --foreground: #111111;
+    --card: #ffffff;
+  }
+
+  .dark {
+    --background: #111111;
+    --foreground: #F5F5F5;
+    --card: #1a1a1a;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.gradient-bg {
+  background: radial-gradient(circle at top left, var(--color-warm-gray), transparent 40%),
+              radial-gradient(circle at bottom right, rgba(0, 184, 169, 0.1), transparent 40%);
+}
+.dark .gradient-bg {
+  background: radial-gradient(circle at top left, #1a1a1a, transparent 40%),
+              radial-gradient(circle at bottom right, rgba(0, 184, 169, 0.15), transparent 40%);
+}
