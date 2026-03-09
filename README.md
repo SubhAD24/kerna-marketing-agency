@@ -7,7 +7,7 @@
   </p>
   <br />
   <p>
-    <a href="https://SubhAD24.github.io/kerna-marketing-agency/"><strong>View Live Website</strong></a>
+    <a href="https://kerna-marketing-agency.vercel.app/"><strong>View Live Website</strong></a>
   </p>
   <br />
   <p>
